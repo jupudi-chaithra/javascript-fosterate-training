@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Welcome</h1>
+        <p id="demo"></p>
+
+        <ul>
+            <li>Hello</li>
+            <li>Hi</li>
+        </ul>
+
+        <h2>Okaye</h2>
+
+        <div id="demo2">
+            This is a demo of getElementById
+        </div>
+
+        <ul>
+            <li>The</li>
+            <li>Test</li>
+        </ul>
+
+        <ul>
+            <li>has</li>
+            <li>passed</li>
+        </ul>
+
+        <div class="contents">
+            <ul class="book">
+              <li class="chapter">Chapter 1</li>
+              <li class="chapter">Chapter 2</li>
+            </ul>
+        </div>
+          
+
+
+        <table id="table">
+            <tr>
+              <td>Your age:</td>  
+              <td>
+                <label>
+                  <input type="radio" name="age" value="young" checked> less than 18
+                </label>
+                <label>
+                  <input type="radio" name="age" value="mature"> from 18 to 50
+                </label>
+                <label>
+                  <input type="radio" name="age" value="senior"> more than 60
+                </label>
+              </td>
+            </tr>
+        </table>
+
+
+        <div>First div</div>
+
+        <script>
+            let divs = document.getElementsByTagName('div');
+            console.log(divs.length);
+        </script>
+
+        <div>Second div</div>
+
+        <script>
+            console.log(divs.length);
+        </script>
+
+
+        <div>First div</div>
+
+        <script>
+            divs = document.querySelectorAll('div');
+            console.log(divs.length);
+        </script>
+
+        <div>Second div</div>
+
+        <script>
+            console.log(divs.length);
+        </script>
+
+
+        <script src="DOM1.js"></script>
+    </body>
+</html>
