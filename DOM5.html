@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h2 onclick="this.innerHTML='Ooops!'">Click on this text!</h2>
+
+        <h2 onclick="changeText(this)">Click on this text!</h2>
+
+        Enter your name: <input type="text" id="fname" onchange="upperCase()">
+        <br><br><br>
+        <div onmouseover="mOver(this)" onmouseout="mOut(this)" style="color: white; background-color:red; width:120px; height:20px; padding:40px;">
+            Mouse Over Me
+        </div>
+        
+        <br><br><br>
+        <div onmousedown="mDown(this)" onmouseup="mUp(this)" style="color: white; background-color:red; width:90px; height:20px; padding:40px;">
+            Click Me
+        </div>
+
+
+        <script src="DOM5.js"></script>
+    </body>
+</html>
